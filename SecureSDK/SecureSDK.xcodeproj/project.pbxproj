@@ -34,6 +34,26 @@
 /* Begin PBXBuildFile section */
 		68BFA00127B7E1CD00D597EA /* SecureSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68BFA00027B7E1CD00D597EA /* SecureSDK.xcframework */; };
 		68BFA00227B7E1CD00D597EA /* SecureSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68BFA00027B7E1CD00D597EA /* SecureSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		68BFA00827B7EE7100D597EA /* SecurityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA00727B7EE7100D597EA /* SecurityProtocol.swift */; };
+		68BFA00A27B7EEAA00D597EA /* SecurityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA00927B7EEAA00D597EA /* SecurityError.swift */; };
+		68BFA00C27B7EEB700D597EA /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA00B27B7EEB700D597EA /* Security.swift */; };
+		68BFA00E27BC4DE100D597EA /* RequestModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA00D27BC4DE100D597EA /* RequestModelProtocol.swift */; };
+		68BFA01627BC514A00D597EA /* GithubEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA01527BC514A00D597EA /* GithubEndpoint.swift */; };
+		68BFA01927BC52F900D597EA /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA01827BC52F900D597EA /* EndpointProtocol.swift */; };
+		68BFA01D27BC54EE00D597EA /* GithubRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA01C27BC54EE00D597EA /* GithubRequest.swift */; };
+		68BFA01F27BC552700D597EA /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA01E27BC552700D597EA /* RequestBuilder.swift */; };
+		68BFA02227BC55BE00D597EA /* AuthenticationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA02127BC55BE00D597EA /* AuthenticationProtocol.swift */; };
+		68BFA02427BC585200D597EA /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA02327BC585200D597EA /* ModelError.swift */; };
+		68BFA02627BC5C6A00D597EA /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA02527BC5C6A00D597EA /* HTTPMethod.swift */; };
+		68BFA02827BC670700D597EA /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA02727BC670700D597EA /* RequestError.swift */; };
+		68BFA02C27BD6FD000D597EA /* ListStarGazersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA02B27BD6FD000D597EA /* ListStarGazersResponse.swift */; };
+		68BFA03027BD735900D597EA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA02F27BD735900D597EA /* NetworkManager.swift */; };
+		68BFA03327BD738600D597EA /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA03227BD738600D597EA /* NetworkManagerProtocol.swift */; };
+		68BFA03527BD7C2800D597EA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA03427BD7C2800D597EA /* NetworkError.swift */; };
+		68BFA03D27BD871300D597EA /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA03C27BD871300D597EA /* ResponseDecoder.swift */; };
+		68BFA04027BD899C00D597EA /* GithubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA03F27BD899C00D597EA /* GithubClient.swift */; };
+		68BFA04527BD8D2900D597EA /* GithubServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA04427BD8D2900D597EA /* GithubServiceProtocol.swift */; };
+		68BFA04727BD8DB200D597EA /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA04627BD8DB200D597EA /* GithubService.swift */; };
 		68D1CA3027B7B64800AB31B8 /* SecureSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 68D1CA2F27B7B64800AB31B8 /* SecureSDK.docc */; };
 		68D1CA3627B7B64900AB31B8 /* SecureSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D1CA2B27B7B64800AB31B8 /* SecureSDK.framework */; };
 		68D1CA3B27B7B64900AB31B8 /* SecureSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1CA3A27B7B64900AB31B8 /* SecureSDKTests.swift */; };
@@ -71,8 +91,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		68BF9FFB27B7E08900D597EA /* SecureSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SecureSDK.xcframework; path = "build/SecureSDK-build/debug/SecureSDK.xcframework"; sourceTree = "<group>"; };
 		68BFA00027B7E1CD00D597EA /* SecureSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SecureSDK.xcframework; path = "build/SecureSDK-build/release/SecureSDK.xcframework"; sourceTree = "<group>"; };
+		68BFA00727B7EE7100D597EA /* SecurityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityProtocol.swift; sourceTree = "<group>"; };
+		68BFA00927B7EEAA00D597EA /* SecurityError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityError.swift; sourceTree = "<group>"; };
+		68BFA00B27B7EEB700D597EA /* Security.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Security.swift; sourceTree = "<group>"; };
+		68BFA00D27BC4DE100D597EA /* RequestModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestModelProtocol.swift; sourceTree = "<group>"; };
+		68BFA01527BC514A00D597EA /* GithubEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubEndpoint.swift; sourceTree = "<group>"; };
+		68BFA01827BC52F900D597EA /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		68BFA01C27BC54EE00D597EA /* GithubRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubRequest.swift; sourceTree = "<group>"; };
+		68BFA01E27BC552700D597EA /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		68BFA02127BC55BE00D597EA /* AuthenticationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocol.swift; sourceTree = "<group>"; };
+		68BFA02327BC585200D597EA /* ModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelError.swift; sourceTree = "<group>"; };
+		68BFA02527BC5C6A00D597EA /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		68BFA02727BC670700D597EA /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		68BFA02B27BD6FD000D597EA /* ListStarGazersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStarGazersResponse.swift; sourceTree = "<group>"; };
+		68BFA02F27BD735900D597EA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		68BFA03227BD738600D597EA /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
+		68BFA03427BD7C2800D597EA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		68BFA03C27BD871300D597EA /* ResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
+		68BFA03F27BD899C00D597EA /* GithubClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubClient.swift; sourceTree = "<group>"; };
+		68BFA04427BD8D2900D597EA /* GithubServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubServiceProtocol.swift; sourceTree = "<group>"; };
+		68BFA04627BD8DB200D597EA /* GithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
 		68D1CA2B27B7B64800AB31B8 /* SecureSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecureSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D1CA2E27B7B64800AB31B8 /* SecureSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecureSDK.h; sourceTree = "<group>"; };
 		68D1CA2F27B7B64800AB31B8 /* SecureSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SecureSDK.docc; sourceTree = "<group>"; };
@@ -123,10 +162,114 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		68BFA00427B7E45E00D597EA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				68BFA03E27BD898400D597EA /* Clients */,
+				68BFA03127BD737100D597EA /* Manager */,
+				68BFA02027BC555F00D597EA /* Authentication */,
+				68BFA01727BC52BF00D597EA /* Requests */,
+				68BFA01227BC50F300D597EA /* Endpoints */,
+				68BFA00F27BC507900D597EA /* Models */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		68BFA00527B7E56F00D597EA /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				68BFA00727B7EE7100D597EA /* SecurityProtocol.swift */,
+				68BFA00927B7EEAA00D597EA /* SecurityError.swift */,
+				68BFA00B27B7EEB700D597EA /* Security.swift */,
+			);
+			path = Security;
+			sourceTree = "<group>";
+		};
+		68BFA00627B7E5B000D597EA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				68BFA04427BD8D2900D597EA /* GithubServiceProtocol.swift */,
+				68BFA04627BD8DB200D597EA /* GithubService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		68BFA00F27BC507900D597EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				68BFA02E27BD6FE200D597EA /* Request */,
+				68BFA02D27BD6FD500D597EA /* Response */,
+				68BFA00D27BC4DE100D597EA /* RequestModelProtocol.swift */,
+				68BFA02327BC585200D597EA /* ModelError.swift */,
+				68BFA03C27BD871300D597EA /* ResponseDecoder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68BFA01227BC50F300D597EA /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				68BFA01527BC514A00D597EA /* GithubEndpoint.swift */,
+				68BFA01827BC52F900D597EA /* EndpointProtocol.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		68BFA01727BC52BF00D597EA /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				68BFA01C27BC54EE00D597EA /* GithubRequest.swift */,
+				68BFA01E27BC552700D597EA /* RequestBuilder.swift */,
+				68BFA02527BC5C6A00D597EA /* HTTPMethod.swift */,
+				68BFA02727BC670700D597EA /* RequestError.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		68BFA02027BC555F00D597EA /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				68BFA02127BC55BE00D597EA /* AuthenticationProtocol.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		68BFA02D27BD6FD500D597EA /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				68BFA02B27BD6FD000D597EA /* ListStarGazersResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		68BFA02E27BD6FE200D597EA /* Request */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		68BFA03127BD737100D597EA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				68BFA02F27BD735900D597EA /* NetworkManager.swift */,
+				68BFA03227BD738600D597EA /* NetworkManagerProtocol.swift */,
+				68BFA03427BD7C2800D597EA /* NetworkError.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		68BFA03E27BD898400D597EA /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				68BFA03F27BD899C00D597EA /* GithubClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
 		68D1CA2127B7B64800AB31B8 = {
 			isa = PBXGroup;
 			children = (
-				68BF9FFB27B7E08900D597EA /* SecureSDK.xcframework */,
 				68D1CA2D27B7B64800AB31B8 /* SecureSDK */,
 				68D1CA3927B7B64900AB31B8 /* SecureSDKTests */,
 				68D1CA4C27B7B75500AB31B8 /* SecureApp */,
@@ -148,6 +291,9 @@
 		68D1CA2D27B7B64800AB31B8 /* SecureSDK */ = {
 			isa = PBXGroup;
 			children = (
+				68BFA00627B7E5B000D597EA /* Services */,
+				68BFA00527B7E56F00D597EA /* Security */,
+				68BFA00427B7E45E00D597EA /* Network */,
 				68D1CA2E27B7B64800AB31B8 /* SecureSDK.h */,
 				68D1CA2F27B7B64800AB31B8 /* SecureSDK.docc */,
 			);
@@ -359,7 +505,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68BFA02827BC670700D597EA /* RequestError.swift in Sources */,
 				68D1CA3027B7B64800AB31B8 /* SecureSDK.docc in Sources */,
+				68BFA00E27BC4DE100D597EA /* RequestModelProtocol.swift in Sources */,
+				68BFA02427BC585200D597EA /* ModelError.swift in Sources */,
+				68BFA03027BD735900D597EA /* NetworkManager.swift in Sources */,
+				68BFA02227BC55BE00D597EA /* AuthenticationProtocol.swift in Sources */,
+				68BFA01D27BC54EE00D597EA /* GithubRequest.swift in Sources */,
+				68BFA03D27BD871300D597EA /* ResponseDecoder.swift in Sources */,
+				68BFA02627BC5C6A00D597EA /* HTTPMethod.swift in Sources */,
+				68BFA01627BC514A00D597EA /* GithubEndpoint.swift in Sources */,
+				68BFA01F27BC552700D597EA /* RequestBuilder.swift in Sources */,
+				68BFA00C27B7EEB700D597EA /* Security.swift in Sources */,
+				68BFA04527BD8D2900D597EA /* GithubServiceProtocol.swift in Sources */,
+				68BFA03327BD738600D597EA /* NetworkManagerProtocol.swift in Sources */,
+				68BFA01927BC52F900D597EA /* EndpointProtocol.swift in Sources */,
+				68BFA00A27B7EEAA00D597EA /* SecurityError.swift in Sources */,
+				68BFA04027BD899C00D597EA /* GithubClient.swift in Sources */,
+				68BFA04727BD8DB200D597EA /* GithubService.swift in Sources */,
+				68BFA03527BD7C2800D597EA /* NetworkError.swift in Sources */,
+				68BFA00827B7EE7100D597EA /* SecurityProtocol.swift in Sources */,
+				68BFA02C27BD6FD000D597EA /* ListStarGazersResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,8 +711,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SecureSDK/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,8 +743,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SecureSDK/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,6 +766,7 @@
 		68D1CA4327B7B64900AB31B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G8368FATB8;
@@ -617,6 +788,7 @@
 		68D1CA4427B7B64900AB31B8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G8368FATB8;
