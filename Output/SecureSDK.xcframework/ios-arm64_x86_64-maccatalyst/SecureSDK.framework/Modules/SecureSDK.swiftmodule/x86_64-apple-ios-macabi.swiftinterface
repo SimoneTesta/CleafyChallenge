@@ -1,0 +1,33 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-module-flags: -target x86_64-apple-ios13.1-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SecureSDK
+import Foundation
+@_exported import SecureSDK
+import Swift
+import _Concurrency
+@_hasMissingDesignatedInitializers public class GithubService {
+  public static let shared: SecureSDK.GithubService
+  public func checkDeviceAndGetStargazers(for owner: Swift.String, in repo: Swift.String, _ completion: @escaping (Swift.Result<[SecureSDK.StarGazersResponse], Swift.Error>) -> Swift.Void)
+  @objc deinit
+}
+public struct StarGazersResponse : Swift.Decodable {
+  public let login: Swift.String
+  public let id: Swift.Int
+  public let node_id: Swift.String
+  public let avatar_url: Swift.String
+  public let gravatar_id: Swift.String
+  public let url: Swift.String
+  public let html_url: Swift.String
+  public let followers_url: Swift.String
+  public let following_url: Swift.String
+  public let gists_url: Swift.String
+  public let starred_url: Swift.String
+  public let subscriptions_url: Swift.String
+  public let organizations_url: Swift.String
+  public let repos_url: Swift.String
+  public let events_url: Swift.String
+  public let received_events_url: Swift.String
+  public let type: Swift.String
+  public let site_admin: Swift.Bool
+  public init(from decoder: Swift.Decoder) throws
+}

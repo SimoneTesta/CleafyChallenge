@@ -1,0 +1,11 @@
+framework module SecureSDK {
+  umbrella header "SecureSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module SecureSDK.Swift {
+    header "SecureSDK-Swift.h"
+    requires objc
+}

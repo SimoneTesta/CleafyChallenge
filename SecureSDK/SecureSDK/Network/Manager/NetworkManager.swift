@@ -48,6 +48,10 @@ class NetworkManager: NetworkManagerProtocol {
             return NetworkError.from(code: response?.statusCode, error: _error)
         }
         
+        if response?.statusCode != 200 {
+           return NetworkError.from(code: response?.statusCode, error: nil)
+        }
+        
         return nil
     }
 }
