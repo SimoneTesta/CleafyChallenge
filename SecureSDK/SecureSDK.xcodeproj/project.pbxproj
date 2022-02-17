@@ -32,8 +32,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		68BFA00127B7E1CD00D597EA /* SecureSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68BFA00027B7E1CD00D597EA /* SecureSDK.xcframework */; };
-		68BFA00227B7E1CD00D597EA /* SecureSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68BFA00027B7E1CD00D597EA /* SecureSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68BFA00827B7EE7100D597EA /* SecurityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA00727B7EE7100D597EA /* SecurityProtocol.swift */; };
 		68BFA00A27B7EEAA00D597EA /* SecurityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA00927B7EEAA00D597EA /* SecurityError.swift */; };
 		68BFA00C27B7EEB700D597EA /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA00B27B7EEB700D597EA /* Security.swift */; };
@@ -46,7 +44,7 @@
 		68BFA02427BC585200D597EA /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA02327BC585200D597EA /* ModelError.swift */; };
 		68BFA02627BC5C6A00D597EA /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA02527BC5C6A00D597EA /* HTTPMethod.swift */; };
 		68BFA02827BC670700D597EA /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA02727BC670700D597EA /* RequestError.swift */; };
-		68BFA02C27BD6FD000D597EA /* ListStarGazersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA02B27BD6FD000D597EA /* ListStarGazersResponse.swift */; };
+		68BFA02C27BD6FD000D597EA /* StarGazersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA02B27BD6FD000D597EA /* StarGazersResponse.swift */; };
 		68BFA03027BD735900D597EA /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA02F27BD735900D597EA /* NetworkManager.swift */; };
 		68BFA03327BD738600D597EA /* NetworkManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA03227BD738600D597EA /* NetworkManagerProtocol.swift */; };
 		68BFA03527BD7C2800D597EA /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA03427BD7C2800D597EA /* NetworkError.swift */; };
@@ -54,6 +52,10 @@
 		68BFA04027BD899C00D597EA /* GithubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA03F27BD899C00D597EA /* GithubClient.swift */; };
 		68BFA04527BD8D2900D597EA /* GithubServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA04427BD8D2900D597EA /* GithubServiceProtocol.swift */; };
 		68BFA04727BD8DB200D597EA /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA04627BD8DB200D597EA /* GithubService.swift */; };
+		68BFA04C27BED30700D597EA /* DebugLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA04B27BED30700D597EA /* DebugLogger.swift */; };
+		68BFA04F27BED32900D597EA /* LoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA04E27BED32900D597EA /* LoggerProtocol.swift */; };
+		68BFA06027BEE4FA00D597EA /* SecureSDK-debug.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68BFA05A27BEDFD900D597EA /* SecureSDK-debug.xcframework */; };
+		68BFA06127BEE4FA00D597EA /* SecureSDK-debug.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68BFA05A27BEDFD900D597EA /* SecureSDK-debug.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68D1CA3027B7B64800AB31B8 /* SecureSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 68D1CA2F27B7B64800AB31B8 /* SecureSDK.docc */; };
 		68D1CA3627B7B64900AB31B8 /* SecureSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D1CA2B27B7B64800AB31B8 /* SecureSDK.framework */; };
 		68D1CA3B27B7B64900AB31B8 /* SecureSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1CA3A27B7B64900AB31B8 /* SecureSDKTests.swift */; };
@@ -77,13 +79,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		68BFA00327B7E1CD00D597EA /* Embed Frameworks */ = {
+		68BFA06227BEE4FA00D597EA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				68BFA00227B7E1CD00D597EA /* SecureSDK.xcframework in Embed Frameworks */,
+				68BFA06127BEE4FA00D597EA /* SecureSDK-debug.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,7 +106,7 @@
 		68BFA02327BC585200D597EA /* ModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelError.swift; sourceTree = "<group>"; };
 		68BFA02527BC5C6A00D597EA /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		68BFA02727BC670700D597EA /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
-		68BFA02B27BD6FD000D597EA /* ListStarGazersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListStarGazersResponse.swift; sourceTree = "<group>"; };
+		68BFA02B27BD6FD000D597EA /* StarGazersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarGazersResponse.swift; sourceTree = "<group>"; };
 		68BFA02F27BD735900D597EA /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		68BFA03227BD738600D597EA /* NetworkManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerProtocol.swift; sourceTree = "<group>"; };
 		68BFA03427BD7C2800D597EA /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -112,6 +114,10 @@
 		68BFA03F27BD899C00D597EA /* GithubClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubClient.swift; sourceTree = "<group>"; };
 		68BFA04427BD8D2900D597EA /* GithubServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubServiceProtocol.swift; sourceTree = "<group>"; };
 		68BFA04627BD8DB200D597EA /* GithubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubService.swift; sourceTree = "<group>"; };
+		68BFA04B27BED30700D597EA /* DebugLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugLogger.swift; sourceTree = "<group>"; };
+		68BFA04E27BED32900D597EA /* LoggerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerProtocol.swift; sourceTree = "<group>"; };
+		68BFA05327BEDA8B00D597EA /* SecureSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SecureSDK.xcframework; path = "build/SecureSDK-build/debug/SecureSDK.xcframework"; sourceTree = "<group>"; };
+		68BFA05A27BEDFD900D597EA /* SecureSDK-debug.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "SecureSDK-debug.xcframework"; path = "build/SecureSDK-build/debug/SecureSDK-debug.xcframework"; sourceTree = "<group>"; };
 		68D1CA2B27B7B64800AB31B8 /* SecureSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SecureSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D1CA2E27B7B64800AB31B8 /* SecureSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecureSDK.h; sourceTree = "<group>"; };
 		68D1CA2F27B7B64800AB31B8 /* SecureSDK.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SecureSDK.docc; sourceTree = "<group>"; };
@@ -147,7 +153,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68BFA00127B7E1CD00D597EA /* SecureSDK.xcframework in Frameworks */,
+				68BFA06027BEE4FA00D597EA /* SecureSDK-debug.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +163,8 @@
 		68BF9FFD27B7E10100D597EA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				68BFA05A27BEDFD900D597EA /* SecureSDK-debug.xcframework */,
+				68BFA05327BEDA8B00D597EA /* SecureSDK.xcframework */,
 				68BFA00027B7E1CD00D597EA /* SecureSDK.xcframework */,
 			);
 			name = Frameworks;
@@ -237,7 +245,7 @@
 		68BFA02D27BD6FD500D597EA /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				68BFA02B27BD6FD000D597EA /* ListStarGazersResponse.swift */,
+				68BFA02B27BD6FD000D597EA /* StarGazersResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -267,6 +275,15 @@
 			path = Clients;
 			sourceTree = "<group>";
 		};
+		68BFA04D27BED31800D597EA /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				68BFA04B27BED30700D597EA /* DebugLogger.swift */,
+				68BFA04E27BED32900D597EA /* LoggerProtocol.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
 		68D1CA2127B7B64800AB31B8 = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +308,7 @@
 		68D1CA2D27B7B64800AB31B8 /* SecureSDK */ = {
 			isa = PBXGroup;
 			children = (
+				68BFA04D27BED31800D597EA /* Logging */,
 				68BFA00627B7E5B000D597EA /* Services */,
 				68BFA00527B7E56F00D597EA /* Security */,
 				68BFA00427B7E45E00D597EA /* Network */,
@@ -379,7 +397,7 @@
 				68D1CA4727B7B75500AB31B8 /* Sources */,
 				68D1CA4827B7B75500AB31B8 /* Frameworks */,
 				68D1CA4927B7B75500AB31B8 /* Resources */,
-				68BFA00327B7E1CD00D597EA /* Embed Frameworks */,
+				68BFA06227BEE4FA00D597EA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -496,7 +514,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#Clean build folder\nrm -rf './build/SecureSDK-build/debug/'\n\n#Build iOS\nxcodebuild archive \\\n-scheme SecureSDK \\\n-configuration Debug \\\n-destination 'generic/platform=iOS' \\\n-archivePath './build/SecureSDK-build/debug/SecureSDK.framework-iphoneos.xcarchive' \\\nSKIP_INSTALL=NO \\\nBUILD_LIBRARIES_FOR_DISTRIBUTION=YES\n\n#Build iOS-Simulator\nxcodebuild archive \\\n-scheme SecureSDK \\\n-configuration Debug \\\n-destination 'generic/platform=iOS Simulator' \\\n-archivePath './build/SecureSDK-build/debug/SecureSDK.framework-iphonesimulator.xcarchive' \\\nSKIP_INSTALL=NO \\\nBUILD_LIBRARIES_FOR_DISTRIBUTION=YES\n\n#Build Catalyst\nxcodebuild archive \\\n-scheme SecureSDK \\\n-configuration Debug \\\n-destination 'platform=macOS,arch=x86_64,variant=Mac Catalyst' \\\n-archivePath './build/SecureSDK-build/debug/SecureSDK.framework-catalyst.xcarchive' \\\nSKIP_INSTALL=NO \\\nBUILD_LIBRARIES_FOR_DISTRIBUTION=YES\n\n#Generate XCFramework Catalyst\nxcodebuild -create-xcframework \\\n-framework './build/SecureSDK-build/debug/SecureSDK.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/SecureSDK.framework' \\\n-framework './build/SecureSDK-build/debug/SecureSDK.framework-iphoneos.xcarchive/Products/Library/Frameworks/SecureSDK.framework' \\\n-framework './build/SecureSDK-build/debug/SecureSDK.framework-catalyst.xcarchive/Products/Library/Frameworks/SecureSDK.framework' \\\n-output './build/SecureSDK-build/debug/SecureSDK.xcframework'\n";
+			shellScript = "#Clean build folder\nrm -rf './build/SecureSDK-build/debug/'\n\n#Build iOS\nxcodebuild archive \\\n-scheme SecureSDK \\\n-configuration Debug \\\n-destination 'generic/platform=iOS' \\\n-archivePath './build/SecureSDK-build/debug/SecureSDK.framework-iphoneos.xcarchive' \\\nSKIP_INSTALL=NO \\\nBUILD_LIBRARIES_FOR_DISTRIBUTION=YES\n\n#Build iOS-Simulator\nxcodebuild archive \\\n-scheme SecureSDK \\\n-configuration Debug \\\n-destination 'generic/platform=iOS Simulator' \\\n-archivePath './build/SecureSDK-build/debug/SecureSDK.framework-iphonesimulator.xcarchive' \\\nSKIP_INSTALL=NO \\\nBUILD_LIBRARIES_FOR_DISTRIBUTION=YES\n\n#Build Catalyst\nxcodebuild archive \\\n-scheme SecureSDK \\\n-configuration Debug \\\n-destination 'platform=macOS,arch=x86_64,variant=Mac Catalyst' \\\n-archivePath './build/SecureSDK-build/debug/SecureSDK.framework-catalyst.xcarchive' \\\nSKIP_INSTALL=NO \\\nBUILD_LIBRARIES_FOR_DISTRIBUTION=YES\n\n#Generate XCFramework Catalyst\nxcodebuild -create-xcframework \\\n-framework './build/SecureSDK-build/debug/SecureSDK.framework-iphonesimulator.xcarchive/Products/Library/Frameworks/SecureSDK.framework' \\\n-framework './build/SecureSDK-build/debug/SecureSDK.framework-iphoneos.xcarchive/Products/Library/Frameworks/SecureSDK.framework' \\\n-framework './build/SecureSDK-build/debug/SecureSDK.framework-catalyst.xcarchive/Products/Library/Frameworks/SecureSDK.framework' \\\n-output './build/SecureSDK-build/debug/SecureSDK-debug.xcframework'\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -506,7 +524,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				68BFA02827BC670700D597EA /* RequestError.swift in Sources */,
+				68BFA04C27BED30700D597EA /* DebugLogger.swift in Sources */,
 				68D1CA3027B7B64800AB31B8 /* SecureSDK.docc in Sources */,
+				68BFA04F27BED32900D597EA /* LoggerProtocol.swift in Sources */,
 				68BFA00E27BC4DE100D597EA /* RequestModelProtocol.swift in Sources */,
 				68BFA02427BC585200D597EA /* ModelError.swift in Sources */,
 				68BFA03027BD735900D597EA /* NetworkManager.swift in Sources */,
@@ -525,7 +545,7 @@
 				68BFA04727BD8DB200D597EA /* GithubService.swift in Sources */,
 				68BFA03527BD7C2800D597EA /* NetworkError.swift in Sources */,
 				68BFA00827B7EE7100D597EA /* SecurityProtocol.swift in Sources */,
-				68BFA02C27BD6FD000D597EA /* ListStarGazersResponse.swift in Sources */,
+				68BFA02C27BD6FD000D597EA /* StarGazersResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -705,6 +725,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = G8368FATB8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -737,6 +758,7 @@
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = G8368FATB8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -827,7 +849,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.simonetesta.apps.SecureApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.st.SecureApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -855,7 +877,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.simonetesta.apps.SecureApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.st.SecureApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

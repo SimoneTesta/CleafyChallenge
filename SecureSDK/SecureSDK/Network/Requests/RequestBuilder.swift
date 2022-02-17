@@ -9,9 +9,7 @@ import Foundation
 
 class RequestBuilder {
     
-    static let shared: RequestBuilder = RequestBuilder()
-    
-    func buildGet(url: URL,
+    static func buildGet(url: URL,
                          queryParameters: [String:String]? = nil,
                          authenticator: AuthenticationProtocol? = nil) throws -> URLRequest {
         return try build(url: url,
@@ -21,7 +19,7 @@ class RequestBuilder {
                          authenticator: authenticator)
     }
     
-    func buildPost(url: URL,
+    static func buildPost(url: URL,
                           queryParameters: [String:String]? = nil,
                           requestModel: RequestModelProtocol?,
                           authenticator: AuthenticationProtocol? = nil) throws -> URLRequest {
@@ -32,7 +30,7 @@ class RequestBuilder {
                          authenticator: authenticator)
     }
     
-    private func build(url: URL,
+    private static func build(url: URL,
                               method: HTTPMethod,
                               queryParameters: [String:String]?,
                               requestModel: RequestModelProtocol?,

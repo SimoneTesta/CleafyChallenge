@@ -10,6 +10,7 @@ import Foundation
 class Security: SecurityProtocol {
     
     static let shared: SecurityProtocol = Security()
+    let logger: LoggerProtocol
     
     private static var jailbreakAppsPathToCheck: [String] {
         return ["/Applications/Cydia.app",
@@ -55,12 +56,26 @@ class Security: SecurityProtocol {
        ]
     }
     
+    init(logger: LoggerProtocol = DebugLogger(className: "Security")) {
+        self.logger = logger
+    }
+    
     func checkDevice() throws {
+        logger.log("Check if device is emulator")
         try checkEmulation()
+        logger.log("Checked if device is emulator")
+        logger.log("Check if device is rooted")
         try checkJailbreak()
+        logger.log("Checked if device is rooted")
+        logger.log("Check if build identifier is too long")
         try checkPackageName()
+        logger.log("Checked if build identifier is too long")
+        logger.log("Check device version")
         try checkVersion()
+        logger.log("Checked device version")
+        logger.log("Check device VPN")
         try checkActiveVPN()
+        logger.log("Checked device VPN")
     }
     
     private func checkEmulation() throws {
@@ -108,7 +123,6 @@ class Security: SecurityProtocol {
         guard let keys = nsDict["__SCOPED__"] as? NSDictionary,
               let allKeys = keys.allKeys as? [String] else { return }
         
-        // Checking for tunneling protocols in the keys
         for key in allKeys {
             for protocolId in Security.vpnProtocolsKeysIdentifiers
             where key.starts(with: protocolId) {

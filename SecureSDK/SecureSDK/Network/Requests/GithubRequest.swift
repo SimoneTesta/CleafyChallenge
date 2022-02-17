@@ -13,6 +13,6 @@ class GithubRequest {
             throw RequestError.BuildError("Cannot get url for ListStarGazers")
         }
         
-        return try RequestBuilder.shared.buildGet(url: url)
+        return try RequestBuilder.buildGet(url: url)
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ListStarGazersResponse: ResponseModelProtocol, Decodable {
+public struct StarGazersResponse: Decodable {
     let login: String
     let id: Int
     let node_id: String
@@ -26,12 +26,4 @@ struct ListStarGazersResponse: ResponseModelProtocol, Decodable {
     let received_events_url: String
     let type: String
     let site_admin: Bool
-
-    func deserialize(data: Data) throws -> Self {
-        do {
-            return try JSONDecoder().decode(Self.self, from: data)
-        } catch {
-            throw ModelError.Deserialization(error.localizedDescription)
-        }
-    }
 }

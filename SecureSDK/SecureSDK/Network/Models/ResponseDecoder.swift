@@ -15,4 +15,12 @@ class ResponseDecoder {
             throw ModelError.Deserialization(error.localizedDescription)
         }
     }
+    
+    static func deserializeJSONArray<T>(data: Data) throws -> [T] where T: Decodable {
+        do {
+            return try JSONDecoder().decode([T].self, from: data)
+        } catch {
+            throw ModelError.Deserialization(error.localizedDescription)
+        }
+    }
 }
