@@ -36,6 +36,8 @@
 		68A58C1627BF073400FE5339 /* StargazerCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A58C1527BF073400FE5339 /* StargazerCellTableViewCell.swift */; };
 		68A58C1827BF090D00FE5339 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A58C1727BF090D00FE5339 /* UIImageView+Extension.swift */; };
 		68A58C1A27BF0DB500FE5339 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A58C1927BF0DB500FE5339 /* UIViewController+Extension.swift */; };
+		68A58C1C27BFD88800FE5339 /* SecureSDK-debug.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A58C1B27BFD88800FE5339 /* SecureSDK-debug.xcframework */; };
+		68A58C1D27BFD88800FE5339 /* SecureSDK-debug.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68A58C1B27BFD88800FE5339 /* SecureSDK-debug.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68BFA00827B7EE7100D597EA /* SecurityProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA00727B7EE7100D597EA /* SecurityProtocol.swift */; };
 		68BFA00A27B7EEAA00D597EA /* SecurityError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA00927B7EEAA00D597EA /* SecurityError.swift */; };
 		68BFA00C27B7EEB700D597EA /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA00B27B7EEB700D597EA /* Security.swift */; };
@@ -58,8 +60,6 @@
 		68BFA04727BD8DB200D597EA /* GithubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA04627BD8DB200D597EA /* GithubService.swift */; };
 		68BFA04C27BED30700D597EA /* DebugLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA04B27BED30700D597EA /* DebugLogger.swift */; };
 		68BFA04F27BED32900D597EA /* LoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BFA04E27BED32900D597EA /* LoggerProtocol.swift */; };
-		68BFA06027BEE4FA00D597EA /* SecureSDK-debug.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68BFA05A27BEDFD900D597EA /* SecureSDK-debug.xcframework */; };
-		68BFA06127BEE4FA00D597EA /* SecureSDK-debug.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 68BFA05A27BEDFD900D597EA /* SecureSDK-debug.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		68D1CA3027B7B64800AB31B8 /* SecureSDK.docc in Sources */ = {isa = PBXBuildFile; fileRef = 68D1CA2F27B7B64800AB31B8 /* SecureSDK.docc */; };
 		68D1CA3627B7B64900AB31B8 /* SecureSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68D1CA2B27B7B64800AB31B8 /* SecureSDK.framework */; };
 		68D1CA3B27B7B64900AB31B8 /* SecureSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1CA3A27B7B64900AB31B8 /* SecureSDKTests.swift */; };
@@ -83,13 +83,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		68BFA06227BEE4FA00D597EA /* Embed Frameworks */ = {
+		68A58C1E27BFD88800FE5339 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				68BFA06127BEE4FA00D597EA /* SecureSDK-debug.xcframework in Embed Frameworks */,
+				68A58C1D27BFD88800FE5339 /* SecureSDK-debug.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +101,7 @@
 		68A58C1527BF073400FE5339 /* StargazerCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StargazerCellTableViewCell.swift; sourceTree = "<group>"; };
 		68A58C1727BF090D00FE5339 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		68A58C1927BF0DB500FE5339 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		68A58C1B27BFD88800FE5339 /* SecureSDK-debug.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "SecureSDK-debug.xcframework"; path = "../Output/SecureSDK-debug.xcframework"; sourceTree = "<group>"; };
 		68BFA00027B7E1CD00D597EA /* SecureSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SecureSDK.xcframework; path = "build/SecureSDK-build/release/SecureSDK.xcframework"; sourceTree = "<group>"; };
 		68BFA00727B7EE7100D597EA /* SecurityProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityProtocol.swift; sourceTree = "<group>"; };
 		68BFA00927B7EEAA00D597EA /* SecurityError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityError.swift; sourceTree = "<group>"; };
@@ -161,7 +162,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68BFA06027BEE4FA00D597EA /* SecureSDK-debug.xcframework in Frameworks */,
+				68A58C1C27BFD88800FE5339 /* SecureSDK-debug.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				68BFA05A27BEDFD900D597EA /* SecureSDK-debug.xcframework */,
+				68A58C1B27BFD88800FE5339 /* SecureSDK-debug.xcframework */,
 				68BFA05327BEDA8B00D597EA /* SecureSDK.xcframework */,
 				68BFA00027B7E1CD00D597EA /* SecureSDK.xcframework */,
 			);
@@ -409,7 +411,7 @@
 				68D1CA4727B7B75500AB31B8 /* Sources */,
 				68D1CA4827B7B75500AB31B8 /* Frameworks */,
 				68D1CA4927B7B75500AB31B8 /* Resources */,
-				68BFA06227BEE4FA00D597EA /* Embed Frameworks */,
+				68A58C1E27BFD88800FE5339 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

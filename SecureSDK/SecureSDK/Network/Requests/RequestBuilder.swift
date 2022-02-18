@@ -8,7 +8,6 @@
 import Foundation
 
 class RequestBuilder {
-    
     static func buildGet(url: URL,
                          queryParameters: [String:String]? = nil,
                          authenticator: AuthenticationProtocol? = nil) throws -> URLRequest {

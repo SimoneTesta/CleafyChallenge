@@ -8,7 +8,6 @@
 import Foundation
 
 class NetworkManager: NetworkManagerProtocol {
-    
     static let shared: NetworkManagerProtocol = NetworkManager(session: URLSession(configuration: .default))
     
     private let session: URLSession

@@ -8,9 +8,7 @@
 import Foundation
 
 class Security: SecurityProtocol {
-    
     static let shared: SecurityProtocol = Security()
-    let logger: LoggerProtocol
     
     private static var jailbreakAppsPathToCheck: [String] {
         return ["/Applications/Cydia.app",
@@ -55,6 +53,8 @@ class Security: SecurityProtocol {
             "utun"
        ]
     }
+    
+    let logger: LoggerProtocol
     
     init(logger: LoggerProtocol = DebugLogger(className: "Security")) {
         self.logger = logger
