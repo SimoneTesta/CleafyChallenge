@@ -43,7 +43,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H8vj6FCtFC4iEweDEfsKTXR0xVGMh9QDs2R5VUVKdkM=
+			MY35y+d+v4WZKbAgCxV54Iwpt/D3Aotlrf9uyPGBt5Y=
 			</data>
 		</dict>
 		<key>Modules/SecureSDK.swiftmodule/arm64.swiftdoc</key>
@@ -64,7 +64,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			H8vj6FCtFC4iEweDEfsKTXR0xVGMh9QDs2R5VUVKdkM=
+			MY35y+d+v4WZKbAgCxV54Iwpt/D3Aotlrf9uyPGBt5Y=
 			</data>
 		</dict>
 		<key>Modules/SecureSDK.swiftmodule/x86_64-apple-ios-macabi.swiftdoc</key>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/NyGTMnbfV/vFo/D2inG5ARwYLn3MWZarnvYlMqGJSY=
+			U9TRVj1eVARYyuGxMnjhHvxy4n/DryIfG8wR90Tzv1k=
 			</data>
 		</dict>
 		<key>Modules/SecureSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -106,7 +106,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/NyGTMnbfV/vFo/D2inG5ARwYLn3MWZarnvYlMqGJSY=
+			U9TRVj1eVARYyuGxMnjhHvxy4n/DryIfG8wR90Tzv1k=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

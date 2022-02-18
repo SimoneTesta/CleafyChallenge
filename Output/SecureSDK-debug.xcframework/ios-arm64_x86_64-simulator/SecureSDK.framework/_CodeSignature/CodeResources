@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/SecureSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		PFqHQnJHWCEls61Re3ESFo2IO3M=
+		i7fKiAdYsiGv8I+z5XGiMXqVbs0=
 		</data>
 		<key>Modules/SecureSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/SecureSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		PFqHQnJHWCEls61Re3ESFo2IO3M=
+		i7fKiAdYsiGv8I+z5XGiMXqVbs0=
 		</data>
 		<key>Modules/SecureSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/SecureSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		6X8kem/GbQYtjREJXbVZORiSfRQ=
+		meET/jRORBZHy+ctoNoQtK9nxk0=
 		</data>
 		<key>Modules/SecureSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/SecureSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		6X8kem/GbQYtjREJXbVZORiSfRQ=
+		meET/jRORBZHy+ctoNoQtK9nxk0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -103,7 +103,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dl353VVacU7C+TNxzVkz4ZwkNaWuLwhPZJoHfx7Fa2g=
+			spnkKgI0NU82CGRqoYD75vZW756+shVPCat7e7Hs8uU=
 			</data>
 		</dict>
 		<key>Modules/SecureSDK.swiftmodule/arm64.swiftdoc</key>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dl353VVacU7C+TNxzVkz4ZwkNaWuLwhPZJoHfx7Fa2g=
+			spnkKgI0NU82CGRqoYD75vZW756+shVPCat7e7Hs8uU=
 			</data>
 		</dict>
 		<key>Modules/SecureSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FcwhaiWbIOJaNyOaLCOtaxiYsDLTlhQkB+Vt823RRHo=
+			uVSZ9+zd5mqhLvCK5uKNXotkucc1876Ld0rGigq8BxI=
 			</data>
 		</dict>
 		<key>Modules/SecureSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -166,7 +166,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FcwhaiWbIOJaNyOaLCOtaxiYsDLTlhQkB+Vt823RRHo=
+			uVSZ9+zd5mqhLvCK5uKNXotkucc1876Ld0rGigq8BxI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
