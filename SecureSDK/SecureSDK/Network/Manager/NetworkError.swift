@@ -10,6 +10,7 @@ import Foundation
 enum NetworkError: LocalizedError {
     case Connection
     case MissingData
+    case NotFound
     case BadRequest(String)
     case Authentication(String)
     case Forbidden(String)
@@ -20,6 +21,8 @@ enum NetworkError: LocalizedError {
         switch self {
         case .Connection:
             return "Connection is not available"
+        case .NotFound:
+            return "The resource is not found"
         case .MissingData:
             return "Can't retrieve data"
         case .BadRequest(let description):
@@ -44,12 +47,15 @@ enum NetworkError: LocalizedError {
                 return .Authentication(message)
             case 403:
                 return .Forbidden(message)
+            case 404:
+                return .NotFound
             case 500:
                 return .ServerError(message)
             default:
                 return .Unknown(error)
             }
         }
+        
         if let _error = error {
             print(_error.code)
             switch _error.code {
